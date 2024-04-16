@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: start;
+      width: 200px;
+      height: 500px;
+      background-color: aqua;
+    }
+
+    .item {
+      width: 24%;
+      height: 50px;
+      background-color: bisque;
+    }
+
+    .item:not(:nth-child(4n)) {
+      margin-right: calc(4%/3);
+    }
+
+    .item:nth-child(n+5) {
+      margin-top: 10px;
+    }
+  </style>
 </head>
+
 <body>
-  
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+  </div>
 </body>
+
 </html>
