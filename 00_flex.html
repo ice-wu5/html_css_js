@@ -40,6 +40,35 @@
     <div class="item">5</div>
     <div class="item">6</div>
   </div>
+  <script>
+    const arr = [
+      {
+        count: 1
+      },
+      {
+        count: 2
+      },
+      {
+        count: 3
+      },
+      {
+        count: 4
+      },
+      {
+        count: 5
+      },
+      {
+        count: 6
+      }
+    ]
+
+    const sum = arr.reduce((prev, item) => prev + item.count, 0)
+    console.log(sum, '和是');
+    arr.splice(2, 2)
+    console.log(arr);
+    const arr2 = [1, 2, 3, 4, 5, 6]
+    console.log(arr2.slice(2, 4));
+  </script>
 </body>
 
 </html>
