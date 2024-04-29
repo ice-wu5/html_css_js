@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: bisque;
+
+    }
+
+    .father-top {
+      height: 100px;
+      background-color: aqua;
+    }
+
+    .father-bottom {
+      position: relative;
+      flex: 1;
+      background-color: #e68989;
+    }
+
+    .son {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      right: 1rem;
+      bottom: 1rem;
+      background-color: aqua;
+      overflow: auto;
+    }
+
+    .grandson {
+      height: 1400px;
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="father-top">123</div>
+    <div class="father-bottom">
+      <div class="son">
+        <div class="grandson">123</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
